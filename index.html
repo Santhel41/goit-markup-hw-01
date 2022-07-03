@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="Chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoI Markup hw 01</title>
+    <title>GoI Markup hw 02</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -14,14 +14,14 @@
     <header>
         <a class="logo" href="#">WebStudio</a>
 
-        <nav class="navBar">
-            <ul>
-                <li><a class="menu" id="enlaceIndex" href="/index.html">Estudio</a></li>
-                <li><a class="menu" id="enlacePort" href="/portafolio.html">Portafolio</a></li>
-                <li><a class="menu" id="enlaceCont" href="Contactos">Contactos</a></li>
-            
-                <li><a class="contacts" id="enlaceMail" href="mailto:webstudio@example.com"> webstudio@example.com</a></li>
-                <li><a class="contacts" id="enlaceTel" href="tel:+5712345678">+57 1234 5678</a></li>
+        <nav class="nav-container">
+            <ul class="nav-bar">
+                <li><a class="menu" href="/index.html">Estudio</a></li>
+                <li><a class="menu" href="/portafolio.html">Portafolio</a></li>
+                <li><a class="menu" href="Contactos">Contactos</a></li>
+
+                <li><a class="contacts menu" id="enlaceMail" href="mailto:webstudio@example.com"> webstudio@example.com</a></li>
+                <li><a class="contacts menu" id="enlaceTel" href="tel:+5712345678">+57 1234 5678</a></li>
             </ul>
         </nav>
         
@@ -64,51 +64,88 @@
         <img class="imageList img3" src="/images/design.png" rel="diseñador">
     </article>
 
-    <article class="meet_cards">
-        <h2 id="subtitle2">Nuestro Equipo</h2>
-      
-            <div class="wrp-img">
-                <img class="card image1" 
-                        src="/images/andrescubo.jpg" 
-                        alt="Andres Cubo"/>
-                <div class="contenedor">
-                    <h4 class="card-title">Andres Cubo</h4>
-                    <p class="card-description">Diseñador de productos</p>
-                </div>
-            </div>
+    <article class="imageList">
+        <h2>A qué nos dedicamos</h2>
+        <img src="/images/devps.png" 
+             rel="desarrollador"
+             width="373.16px" 
+             height="323.7px"
+             top="1092.3px"
+             left="215px">
             
-            <div class="wrp-img">
-                <img class="card image2" 
-                        src="/images/carlapalacios.jpg" 
-                        alt="Carla Palacios"/>
-                <div class="contenedor">
-                    <h4 class="card-title">Carla Palacio</h4>
-                    <p class="card-description">Desarrolladora Frontend</p>
-                </div>    
-            </div>
+        <img src="/images/ui.png" rel="diseño ui"
+             width="373.16px"
+             height="323.7px"
+             top="1092.3px"
+             left="618.42px">
 
-            <div class="wrp-img">
-                <img class="card image3" 
-                        src="/images/mariodorado.jpg" 
-                        alt="Mario Dorado"/>
-                <div class="contenedor">        
-                    <h4 class="card-title">Mario Dorado</h4>
-                    <p class="card-description">Marketing</p>
-                </div>
-            </div>
-
-            
-            <div class="wrp-img">
-                <img class="card image4" 
-                        src="/images/pablomijanos.jpg" 
-                        alt="Pablo Mijanos"/>
-                <div class="contenedor">
-                    <h4 class="card-title">Pablo Mijanos</h4>
-                    <p class="card-description">Diseñador UI</p>
-                </div>    
-            </div>
+        <img src="/images/design.png" rel="diseñador"
+             width="373.16px"
+             height="323.7px"
+             top="1092.3px" 
+             left="1015px">
     </article>
-        
+
+    <article class="meet_cards">
+        <h2>Nuestro Equipo</h2>
+        <ul class="cards">
+            <li class="card">
+            <div class="wrp-img">
+                <img class="card-image" 
+                        src="/images/andrescubo.jpg" 
+                        alt="Andres Cubo"
+                        height="260px"
+                        width="270px"
+                        top="1696px"
+                        left="208px" />
+            </div>
+                <h4 class="card-title">Andres Cubo</h4>
+                <p class="card-description">Diseñador de productos</p>
+            </li>
+
+            <li class="card">
+            <div class="wrp-img">
+                <img class="card-image" 
+                        src="/images/carlapalacios.jpg" 
+                        alt="Carla Palacios"
+                        height="260px"
+                        width="270px"
+                        top="1696px"
+                        left="515px" />
+            </div>
+                <h4 class="card-title">Carla Palacio</h4>
+                <p class="card-description">Desarrolladora Frontend</p>
+            </li>
+
+            <li class="card">
+            <div class="wrp-img">
+                <img class="card-image" 
+                        src="/images/mariodorado.jpg" 
+                        alt="Mario Dorado"
+                        height="260px"
+                        width="270px"
+                        top="1696px"
+                        left="208px" />
+            </div>
+                <h4 class="card-title">Mario Dorado</h4>
+                <p class="card-description">Marketing</p>
+            </li>
+
+            <li class="card">
+            <div class="wrp-img">
+                <img class="card-image" 
+                        src="/images/pablomijanos.jpg" 
+                        alt="Pablo Mijanos"
+                        height="260px"
+                        width="270px"
+                        top="1696px"
+                        left="208px" />
+            </div>
+                <h4 class="card-title">Pablo Mijanos</h4>
+                <p class="card-description">Diseñador UI</p>
+            </li>
+        </ul>
+    </article>
     </main>
 
     <footer class="pie">
